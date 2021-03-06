@@ -50,6 +50,11 @@ h1 em {
   font-size: 44px;
 }
 
+h2 em {
+  font-style: unset;
+  font-size: 44px;
+}
+
 .input-group{
   display: flex;
   flex-direction: column;

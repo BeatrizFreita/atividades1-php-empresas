@@ -10,8 +10,6 @@
 
     $totalSalarioAcima = $salarioatual + $aumentoSalarioDez;
     $totalSalarioAbaixo = $salarioatual + $aumentoSalario20;
-
-
 ?>
 
 
@@ -25,13 +23,13 @@
 </head>
 <body>
     <?php
-        if($salarioatual>5000){
+        if($salarioatual >= 5000){
     ?>
-    <h1> O <?= $nome?> passará a receber R$ <?= $totalSalarioAcima?></h1>
-    <?
-        }else{ 
+    <h1> Você, <?= $nome?> passará a receber R$ <?= number_format($totalSalarioAcima, 2, ",", ".")?></h1>
+    <?php
+        }else { 
     ?>
-           <h1> O <?= $nome?> passará a receber R$ <?= $totalSalarioAbaixo?></h1>
+        <h1> Você, <?= $nome?> passará a receber R$ <?= number_format($totalSalarioAbaixo, 2, ",", ".")?></h1>
     <?php
         }
     ?>
